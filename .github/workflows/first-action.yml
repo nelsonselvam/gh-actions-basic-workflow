@@ -1,0 +1,18 @@
+#give a name to th workflow
+name: First Workflow
+
+#when this needs to be executed, define the event
+#workflow_dispatch - manually trigger the workflow
+on: workflow_dispatch
+
+#work that needs to be done
+jobs:
+  #give the job a name
+  first-job: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello Workflow!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
+  
