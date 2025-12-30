@@ -13,6 +13,10 @@ jobs:
     steps:
       - name: Print greeting
         run: echo "Hello Workflow!"
+      - name: Multiline Shell Scripts
+        run: |
+          echo "Shell 1"
+          echo "Shell 2"
       - name: Print goodbye
         run: echo "Done - bye!"
   
